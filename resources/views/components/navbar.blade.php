@@ -23,6 +23,11 @@
             </a>
         </li>
         <li>
+            <a href="{{ route('productos.index') }}" class="nav-link" onclick="closeMenu()">
+                Prodctos
+            </a>
+        </li>
+        <li>
             <a href="/" class="nav-link" onclick="closeMenu()">
                 Registro
             </a>

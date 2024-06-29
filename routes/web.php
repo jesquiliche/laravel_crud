@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DenominacionController;
+use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TipoController;
 use Illuminate\Support\Facades\Route;
@@ -21,5 +22,6 @@ Route::middleware('auth')->group(function () {
 
 Route::resource('tipos', TipoController::class);
 Route::resource('denominaciones', DenominacionController::class);
+Route::resource('productos', ProductoController::class);
 
 require __DIR__.'/auth.php';
