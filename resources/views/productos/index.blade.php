@@ -25,7 +25,7 @@
                 <tr>
                     <td class="border-t px-4 py-2">{{ $producto->id }}</td>
                     <td class="border-t px-4 py-2">
-                        <img src="{{ $producto->imagen }}" class="h-28 w-28" alt="Imagen del Producto" class="mt-4">
+                        <img src="{{ $producto->imagen }}" class="text-center w-28" alt="Imagen del Producto" class="mt-4">
                     </td>
                     <td class="border-t px-4 py-2">{{ $producto->nombre }}</td>
                     <td class="border-t px-4 py-2">{{ $producto->descripcion }}</td>
@@ -42,6 +42,11 @@
             @endforeach
         </tbody>
     </table>
+    <div class="mt-8 mr-">
+        {{ $productos->links() }}
+    </div>
+    
 </div>
+
 
 @endsection

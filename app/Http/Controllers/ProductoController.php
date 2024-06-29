@@ -15,7 +15,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        $productos = Producto::all();
+        $productos = Producto::paginate(1); // Cambiar '10' por el número de productos por página que desees
         return view('productos.index', compact('productos'));
     }
 
