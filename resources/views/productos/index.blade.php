@@ -42,7 +42,7 @@
             @endforeach
         </tbody>
     </table>
-    <div class="mt-8 mr-">
+    <div class="mt-8 font-bold">
         {{ $productos->links() }}
     </div>
     

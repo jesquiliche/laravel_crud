@@ -24,22 +24,10 @@
         </li>
         <li>
             <a href="{{ route('productos.index') }}" class="nav-link" onclick="closeMenu()">
-                Prodctos
+                Productos
             </a>
-        </li>
-        <li>
-            <a href="/" class="nav-link" onclick="closeMenu()">
-                Registro
-            </a>
-        </li>
-        @guest
-            <li>
-                <a href="/" class="nav-link" onclick="closeMenu()">
-                    Inicio sesión
-                </a>
-            </li>
-        @endguest
-
+      
+       
         @if (auth()->check())
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
